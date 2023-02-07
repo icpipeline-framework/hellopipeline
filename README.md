@@ -1,7 +1,7 @@
 # hellopipeline
 
-## A note to ICPipeline Beta participants
-If you should happen to review this README, please note that these setup steps are NOT required, and should be skipped, if you're working through the step-by-step tesing tasks.  Thanks!
+## A note to ICPipeline Beta Testing participants
+### If you should happen to review this README, please note that the setup steps in this README are NOT required, and should be omitted, if you are working through the step-by-step testing tasks.  Thanks!
 
 Welcome to your new hellopipeline project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
 
