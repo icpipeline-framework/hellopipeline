@@ -1,4 +1,4 @@
-import { hellosnapshot1 } from "../../declarations/hellosnapshot1";
+import { hellopipeline } from "../../declarations/hellopipeline";
 
 
 document.getElementById("greeting").innerText = "";
@@ -9,16 +9,16 @@ document.getElementById("historyTrie").innerText = "... Please Wait ...";
 document.getElementById("historyStable").innerText = "... Please Wait ...";
 
 const loadMe = async () => {
-  const historyBuffer = await hellosnapshot1.getHistoryBuffer();
+  const historyBuffer = await hellopipeline.getHistoryBuffer();
   document.getElementById("historyBuffer").innerText = historyBuffer;
 
-  const historyHash = await hellosnapshot1.getHistoryHashMap();
+  const historyHash = await hellopipeline.getHistoryHashMap();
   document.getElementById("historyHash").innerText = historyHash;
 
-  const historyTrie = await hellosnapshot1.getHistoryTrieMap();
+  const historyTrie = await hellopipeline.getHistoryTrieMap();
   document.getElementById("historyTrie").innerText = historyTrie;
 
-  const historyStable = await hellosnapshot1.getHistoryStable();
+  const historyStable = await hellopipeline.getHistoryStable();
   document.getElementById("historyStable").innerText = historyStable;
 }
 const pleaseWait = async () => {
@@ -39,8 +39,8 @@ document.getElementById("clickMeBtn").addEventListener("click", async () => {
   pleaseWait ();
 
 
-  // Interact with hellosnapshot1 actor, calling the greet method
-  const greeting = await hellosnapshot1.greet(name);
+  // Interact with hellopipeline actor, calling the greet method
+  const greeting = await hellopipeline.greet(name);
 
   document.getElementById("greeting").innerText = greeting;
 
@@ -53,8 +53,8 @@ document.getElementById("clearDataBtn").addEventListener("click", async () => {
   pleaseWait ();
   
 
-  // Interact with hellosnapshot1 actor, calling the greet method
-  const icResponse = await hellosnapshot1.clearDataMain();
+  // Interact with hellopipeline actor, calling the greet method
+  const icResponse = await hellopipeline.clearDataMain();
   if (icResponse == "OK")
     document.getElementById("greeting").innerText = "Successfully Cleared the Data";
 
@@ -66,8 +66,8 @@ document.getElementById("doBackupBtn").addEventListener("click", async () => {
   pleaseWait ();
   
 
-  // Interact with hellosnapshot1 actor, calling the greet method
-  const icResponse = await hellosnapshot1.doICArchiveMain();
+  // Interact with hellopipeline actor, calling the greet method
+  const icResponse = await hellopipeline.doICArchiveMain();
   const icResponseString = JSON.stringify (icResponse, (key, value) =>
     typeof value === 'bigint'
         ? Number(value)

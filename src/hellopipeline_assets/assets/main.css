@@ -24,7 +24,14 @@ section {
     margin: auto;
     align-items: baseline;
 }
+#explanation {
 
+    font-size: .8rem;
+    font-style: italic;
+    display: inline;
+    clear: none;
+    
+}
 #clickMeBtn {
     padding: 5px 20px;
     margin: 10px auto;
@@ -48,23 +55,27 @@ section {
     margin: 10px auto;
     padding: 10px 60px;
     border: 1px solid #222;
+    overflow-x: auto;
 }
 #historyStable {
     margin: 10px auto;
     padding: 10px 60px;
     border: 1px solid #222;
+    overflow-x: auto;
 }
 
 #historyHash {
     margin: 10px auto;
     padding: 10px 60px;
     border: 1px solid #222;
+    overflow-x: auto;
 }
 
 #historyTrie {
     margin: 10px auto;
     padding: 10px 60px;
     border: 1px solid #222;
+    overflow-x: auto;
 }
 
 #greeting:empty {
