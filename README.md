@@ -1,10 +1,10 @@
-# hellosnapshot1
+# hellopipeline
 
-Welcome to your new hellosnapshot1 project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+Welcome to your new hellopipeline project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
 
 To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
 
-To learn more before you start working with hellosnapshot1, see the following documentation available online:
+To learn more before you start working with hellopipeline, see the following documentation available online:
 
 - [Quick Start](https://sdk.dfinity.org/docs/quickstart/quickstart-intro.html)
 - [SDK Developer Tools](https://sdk.dfinity.org/docs/developers-guide/sdk-guide.html)
@@ -15,7 +15,7 @@ To learn more before you start working with hellosnapshot1, see the following do
 If you want to start working on your project right away, you might want to try the following commands:
 
 ```bash
-cd hellosnapshot1/
+cd hellopipeline/
 dfx help
 dfx config --help
 ```
@@ -32,7 +32,7 @@ dfx start --background
 dfx deploy
 ```
 
-Once the job completes, your application will be available at `http://localhost:8000?canisterId={asset_canister_id}`.
+Once the job completes, your application will be available at `http://localhost:4943?canisterId={asset_canister_id}`.
 
 Additionally, if you are making frontend changes, you can start a development server with
 
@@ -40,7 +40,7 @@ Additionally, if you are making frontend changes, you can start a development se
 npm start
 ```
 
-Which will start a server at `http://localhost:8080`, proxying API requests to the replica at port 8000.
+Which will start a server at `http://localhost:4943`, proxying API requests to the replica at port 4943.
 
 ### Note on frontend environment variables
 
