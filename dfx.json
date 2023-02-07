@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "hellosnapshot1": {
+      "main": "src/hellopipeline/main.mo",
+      "type": "motoko"
+    },
+    "hellosnapshot1_assets": {
+      "dependencies": [
+        "hellopipeline"
+      ],
+      "frontend": {
+        "entrypoint": "src/hellopipeline_assets/src/index.html"
+      },
+      "source": [
+        "src/hellopipeline_assets/assets",
+        "dist/hellopipeline_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}

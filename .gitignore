@@ -1,0 +1,10 @@
+
+# Dependency directories
+node_modules/
+package-lock.json
+
+# build dir
+.dfx/*
+dist/*
+src/declarations/*
+canister_ids.json
